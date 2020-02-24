@@ -18,6 +18,9 @@
 		E8F5E18D24038EB300BB1AF6 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18924038EB300BB1AF6 /* RxRelay.framework */; };
 		E8F5E18E24038EB300BB1AF6 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18A24038EB300BB1AF6 /* SnapKit.framework */; };
 		E8F5E18F24038EB300BB1AF6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18B24038EB300BB1AF6 /* RxSwift.framework */; };
+		E8F5E1922403911300BB1AF6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E1912403911300BB1AF6 /* NetworkClient.swift */; };
+		E8F5E1972403929100BB1AF6 /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E1962403929100BB1AF6 /* URLSessionType.swift */; };
+		E8F5E199240393A800BB1AF6 /* NetworkClientImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E198240393A800BB1AF6 /* NetworkClientImplTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		E8F5E18924038EB300BB1AF6 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		E8F5E18A24038EB300BB1AF6 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		E8F5E18B24038EB300BB1AF6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E8F5E1912403911300BB1AF6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		E8F5E1962403929100BB1AF6 /* URLSessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionType.swift; sourceTree = "<group>"; };
+		E8F5E198240393A800BB1AF6 /* NetworkClientImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientImplTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		E886445F24038683006C37FD /* GithubSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				E8F5E190240390EF00BB1AF6 /* Networking */,
 				E886446024038683006C37FD /* AppDelegate.swift */,
 				E886446224038683006C37FD /* SceneDelegate.swift */,
 				E886446424038683006C37FD /* ViewController.swift */,
@@ -129,6 +136,7 @@
 			children = (
 				E886447724038685006C37FD /* GithubSampleAppTests.swift */,
 				E886447924038685006C37FD /* Info.plist */,
+				E8F5E198240393A800BB1AF6 /* NetworkClientImplTests.swift */,
 			);
 			path = GithubSampleAppTests;
 			sourceTree = "<group>";
@@ -155,6 +163,15 @@
 				E886449424038A4C006C37FD /* SnapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8F5E190240390EF00BB1AF6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5E1912403911300BB1AF6 /* NetworkClient.swift */,
+				E8F5E1962403929100BB1AF6 /* URLSessionType.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F5E1972403929100BB1AF6 /* URLSessionType.swift in Sources */,
 				E886446524038683006C37FD /* ViewController.swift in Sources */,
 				E886446124038683006C37FD /* AppDelegate.swift in Sources */,
 				E886446324038683006C37FD /* SceneDelegate.swift in Sources */,
+				E8F5E1922403911300BB1AF6 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E886447824038685006C37FD /* GithubSampleAppTests.swift in Sources */,
+				E8F5E199240393A800BB1AF6 /* NetworkClientImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
