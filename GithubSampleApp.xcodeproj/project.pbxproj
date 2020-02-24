@@ -14,6 +14,11 @@
 		E886446D24038685006C37FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E886446B24038685006C37FD /* LaunchScreen.storyboard */; };
 		E886447824038685006C37FD /* GithubSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886447724038685006C37FD /* GithubSampleAppTests.swift */; };
 		E886448324038685006C37FD /* GithubSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886448224038685006C37FD /* GithubSampleAppUITests.swift */; };
+		E8934B3924039FBB00034DC4 /* CommitsDataControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8934B3824039FBB00034DC4 /* CommitsDataControllerTests.swift */; };
+		E8934B3A2403A1AF00034DC4 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18824038EB300BB1AF6 /* RxCocoa.framework */; };
+		E8934B3B2403A1AF00034DC4 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18924038EB300BB1AF6 /* RxRelay.framework */; };
+		E8934B3C2403A1AF00034DC4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18B24038EB300BB1AF6 /* RxSwift.framework */; };
+		E8934B3E2403A1AF00034DC4 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8934B3D2403A1AF00034DC4 /* RxTest.framework */; };
 		E8F5E18C24038EB300BB1AF6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18824038EB300BB1AF6 /* RxCocoa.framework */; };
 		E8F5E18D24038EB300BB1AF6 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18924038EB300BB1AF6 /* RxRelay.framework */; };
 		E8F5E18E24038EB300BB1AF6 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18A24038EB300BB1AF6 /* SnapKit.framework */; };
@@ -21,6 +26,8 @@
 		E8F5E1922403911300BB1AF6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E1912403911300BB1AF6 /* NetworkClient.swift */; };
 		E8F5E1972403929100BB1AF6 /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E1962403929100BB1AF6 /* URLSessionType.swift */; };
 		E8F5E199240393A800BB1AF6 /* NetworkClientImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E198240393A800BB1AF6 /* NetworkClientImplTests.swift */; };
+		E8F5E19B2403987700BB1AF6 /* CommitsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E19A2403987700BB1AF6 /* CommitsDataController.swift */; };
+		E8F5E19E240398F100BB1AF6 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E19D240398F100BB1AF6 /* Commit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,8 @@
 		E886449224038A4C006C37FD /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		E886449324038A4C006C37FD /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = ../Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		E886449424038A4C006C37FD /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		E8934B3824039FBB00034DC4 /* CommitsDataControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsDataControllerTests.swift; sourceTree = "<group>"; };
+		E8934B3D2403A1AF00034DC4 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		E8F5E18824038EB300BB1AF6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		E8F5E18924038EB300BB1AF6 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		E8F5E18A24038EB300BB1AF6 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
@@ -65,6 +74,8 @@
 		E8F5E1912403911300BB1AF6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		E8F5E1962403929100BB1AF6 /* URLSessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionType.swift; sourceTree = "<group>"; };
 		E8F5E198240393A800BB1AF6 /* NetworkClientImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientImplTests.swift; sourceTree = "<group>"; };
+		E8F5E19A2403987700BB1AF6 /* CommitsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsDataController.swift; sourceTree = "<group>"; };
+		E8F5E19D240398F100BB1AF6 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8934B3E2403A1AF00034DC4 /* RxTest.framework in Frameworks */,
+				E8934B3A2403A1AF00034DC4 /* RxCocoa.framework in Frameworks */,
+				E8934B3B2403A1AF00034DC4 /* RxRelay.framework in Frameworks */,
+				E8934B3C2403A1AF00034DC4 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +135,7 @@
 		E886445F24038683006C37FD /* GithubSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				E8F5E19C240398D100BB1AF6 /* Commits */,
 				E8F5E190240390EF00BB1AF6 /* Networking */,
 				E886446024038683006C37FD /* AppDelegate.swift */,
 				E886446224038683006C37FD /* SceneDelegate.swift */,
@@ -137,6 +153,7 @@
 				E886447724038685006C37FD /* GithubSampleAppTests.swift */,
 				E886447924038685006C37FD /* Info.plist */,
 				E8F5E198240393A800BB1AF6 /* NetworkClientImplTests.swift */,
+				E8934B3824039FBB00034DC4 /* CommitsDataControllerTests.swift */,
 			);
 			path = GithubSampleAppTests;
 			sourceTree = "<group>";
@@ -153,6 +170,7 @@
 		E886449024038A4C006C37FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8934B3D2403A1AF00034DC4 /* RxTest.framework */,
 				E8F5E18824038EB300BB1AF6 /* RxCocoa.framework */,
 				E8F5E18924038EB300BB1AF6 /* RxRelay.framework */,
 				E8F5E18B24038EB300BB1AF6 /* RxSwift.framework */,
@@ -172,6 +190,15 @@
 				E8F5E1962403929100BB1AF6 /* URLSessionType.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		E8F5E19C240398D100BB1AF6 /* Commits */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5E19A2403987700BB1AF6 /* CommitsDataController.swift */,
+				E8F5E19D240398F100BB1AF6 /* Commit.swift */,
+			);
+			path = Commits;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F5E19B2403987700BB1AF6 /* CommitsDataController.swift in Sources */,
 				E8F5E1972403929100BB1AF6 /* URLSessionType.swift in Sources */,
+				E8F5E19E240398F100BB1AF6 /* Commit.swift in Sources */,
 				E886446524038683006C37FD /* ViewController.swift in Sources */,
 				E886446124038683006C37FD /* AppDelegate.swift in Sources */,
 				E886446324038683006C37FD /* SceneDelegate.swift in Sources */,
@@ -317,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E886447824038685006C37FD /* GithubSampleAppTests.swift in Sources */,
+				E8934B3924039FBB00034DC4 /* CommitsDataControllerTests.swift in Sources */,
 				E8F5E199240393A800BB1AF6 /* NetworkClientImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +547,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98J56N9R42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubSampleAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -539,6 +573,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98J56N9R42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubSampleAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
