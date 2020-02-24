@@ -20,7 +20,6 @@ protocol CommitsDataControllable {
 
 
 class CommitsDataController: CommitsDataControllable {
-    private let disposeBag = DisposeBag()
     private let scheme = "https"
     private let host = "api.github.com"
     private let networkClient: NetworkClient

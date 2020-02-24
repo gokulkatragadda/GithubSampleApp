@@ -21,6 +21,12 @@ struct Commit: Decodable {
         case author = "author"
     }
     
+    init(sha: String, authorName: String, description: String) {
+        self.sha = sha
+        self.authorName = authorName
+        self.description = description
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         sha = try container.decode(String.self, forKey: .sha)
