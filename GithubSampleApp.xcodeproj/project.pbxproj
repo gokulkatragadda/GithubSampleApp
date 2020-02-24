@@ -14,6 +14,10 @@
 		E886446D24038685006C37FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E886446B24038685006C37FD /* LaunchScreen.storyboard */; };
 		E886447824038685006C37FD /* GithubSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886447724038685006C37FD /* GithubSampleAppTests.swift */; };
 		E886448324038685006C37FD /* GithubSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886448224038685006C37FD /* GithubSampleAppUITests.swift */; };
+		E8F5E18C24038EB300BB1AF6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18824038EB300BB1AF6 /* RxCocoa.framework */; };
+		E8F5E18D24038EB300BB1AF6 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18924038EB300BB1AF6 /* RxRelay.framework */; };
+		E8F5E18E24038EB300BB1AF6 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18A24038EB300BB1AF6 /* SnapKit.framework */; };
+		E8F5E18F24038EB300BB1AF6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E18B24038EB300BB1AF6 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,14 @@
 		E886447E24038685006C37FD /* GithubSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E886448224038685006C37FD /* GithubSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSampleAppUITests.swift; sourceTree = "<group>"; };
 		E886448424038685006C37FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E886449124038A4C006C37FD /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E886449224038A4C006C37FD /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E886449324038A4C006C37FD /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = ../Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		E886449424038A4C006C37FD /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		E8F5E18824038EB300BB1AF6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E8F5E18924038EB300BB1AF6 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		E8F5E18A24038EB300BB1AF6 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		E8F5E18B24038EB300BB1AF6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F5E18C24038EB300BB1AF6 /* RxCocoa.framework in Frameworks */,
+				E8F5E18D24038EB300BB1AF6 /* RxRelay.framework in Frameworks */,
+				E8F5E18E24038EB300BB1AF6 /* SnapKit.framework in Frameworks */,
+				E8F5E18F24038EB300BB1AF6 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,7 @@
 				E886447624038685006C37FD /* GithubSampleAppTests */,
 				E886448124038685006C37FD /* GithubSampleAppUITests */,
 				E886445E24038683006C37FD /* Products */,
+				E886449024038A4C006C37FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +140,21 @@
 				E886448424038685006C37FD /* Info.plist */,
 			);
 			path = GithubSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		E886449024038A4C006C37FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5E18824038EB300BB1AF6 /* RxCocoa.framework */,
+				E8F5E18924038EB300BB1AF6 /* RxRelay.framework */,
+				E8F5E18B24038EB300BB1AF6 /* RxSwift.framework */,
+				E8F5E18A24038EB300BB1AF6 /* SnapKit.framework */,
+				E886449224038A4C006C37FD /* RxCocoa.framework */,
+				E886449324038A4C006C37FD /* RxRelay.framework */,
+				E886449124038A4C006C37FD /* RxSwift.framework */,
+				E886449424038A4C006C37FD /* SnapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,10 +456,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98J56N9R42;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = GithubSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppFactory.GithubSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,10 +476,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98J56N9R42;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = GithubSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppFactory.GithubSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
