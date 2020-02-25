@@ -13,7 +13,8 @@ class CommitListView: UIView {
     lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero,
                                               collectionViewLayout: UICollectionViewFlowLayout())
-        collectionView.backgroundColor = UIColor(red: 76, green: 226, blue: 232, alpha: 1)
+        collectionView.backgroundColor = .white
+        collectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
         collectionView.allowsSelection = false
         return collectionView
     }()

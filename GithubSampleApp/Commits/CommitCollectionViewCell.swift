@@ -20,7 +20,7 @@ class CommitCollectionViewCell: UICollectionViewCell {
     lazy var SHALabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.textColor = .blue
+        label.textColor = .purple
         label.font = label.font.withSize(14)
         return label
     }()
@@ -28,7 +28,7 @@ class CommitCollectionViewCell: UICollectionViewCell {
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 3
-        label.lineBreakMode = .byTruncatingTail
+        label.textColor = .darkGray
         return label
     }()
     
@@ -41,6 +41,15 @@ class CommitCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
+    lazy var containerView: UIView = {
+        let view = UIView()
+        view.layer.borderColor = UIColor.purple.cgColor
+        view.layer.borderWidth = 2
+        view.layer.cornerRadius = 7
+        view.layer.zPosition = 5
+        return view
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpView()
@@ -51,7 +60,13 @@ class CommitCollectionViewCell: UICollectionViewCell {
     }
     
     func setUpView() {
-        addSubview(stackView)
+        addSubview(containerView)
+        containerView.snp.makeConstraints { (make) in
+            make.leading.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().inset(10)
+            make.top.bottom.equalToSuperview()
+        }
+        containerView.addSubview(stackView)
         stackView.addArrangedSubview(authorLabel)
         stackView.addArrangedSubview(SHALabel)
         stackView.addArrangedSubview(descriptionLabel)
