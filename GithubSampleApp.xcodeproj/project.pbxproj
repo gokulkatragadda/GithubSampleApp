@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E886446124038683006C37FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886446024038683006C37FD /* AppDelegate.swift */; };
 		E886446324038683006C37FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886446224038683006C37FD /* SceneDelegate.swift */; };
-		E886446524038683006C37FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886446424038683006C37FD /* ViewController.swift */; };
 		E886446A24038685006C37FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E886446924038685006C37FD /* Assets.xcassets */; };
 		E886446D24038685006C37FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E886446B24038685006C37FD /* LaunchScreen.storyboard */; };
 		E886447824038685006C37FD /* GithubSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886447724038685006C37FD /* GithubSampleAppTests.swift */; };
@@ -58,7 +57,6 @@
 		E886445D24038683006C37FD /* GithubSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E886446024038683006C37FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E886446224038683006C37FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E886446424038683006C37FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E886446924038685006C37FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E886446C24038685006C37FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E886446E24038685006C37FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,15 +147,10 @@
 		E886445F24038683006C37FD /* GithubSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				E8CF8B2A2404D597001F3A0B /* SupportingFiles */,
 				E8934B432403A42900034DC4 /* Utilities */,
 				E8F5E19C240398D100BB1AF6 /* Commits */,
 				E8F5E190240390EF00BB1AF6 /* Networking */,
-				E886446024038683006C37FD /* AppDelegate.swift */,
-				E886446224038683006C37FD /* SceneDelegate.swift */,
-				E886446424038683006C37FD /* ViewController.swift */,
-				E886446924038685006C37FD /* Assets.xcassets */,
-				E886446B24038685006C37FD /* LaunchScreen.storyboard */,
-				E886446E24038685006C37FD /* Info.plist */,
 			);
 			path = GithubSampleApp;
 			sourceTree = "<group>";
@@ -206,6 +199,18 @@
 				E8934B442403A45100034DC4 /* BaseViewController.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E8CF8B2A2404D597001F3A0B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E886446024038683006C37FD /* AppDelegate.swift */,
+				E886446224038683006C37FD /* SceneDelegate.swift */,
+				E886446924038685006C37FD /* Assets.xcassets */,
+				E886446B24038685006C37FD /* LaunchScreen.storyboard */,
+				E886446E24038685006C37FD /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		E8F5E190240390EF00BB1AF6 /* Networking */ = {
@@ -365,7 +370,6 @@
 				E8F5E1972403929100BB1AF6 /* URLSessionType.swift in Sources */,
 				E8F5E19E240398F100BB1AF6 /* Commit.swift in Sources */,
 				E8934B472403A47300034DC4 /* CommitListView.swift in Sources */,
-				E886446524038683006C37FD /* ViewController.swift in Sources */,
 				E886446124038683006C37FD /* AppDelegate.swift in Sources */,
 				E8934B452403A45100034DC4 /* BaseViewController.swift in Sources */,
 				E8934B402403A28800034DC4 /* CommitListViewModel.swift in Sources */,
@@ -543,7 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98J56N9R42;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				INFOPLIST_FILE = GithubSampleApp/Info.plist;
+				INFOPLIST_FILE = GithubSampleApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,7 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98J56N9R42;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				INFOPLIST_FILE = GithubSampleApp/Info.plist;
+				INFOPLIST_FILE = GithubSampleApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
